@@ -1,0 +1,96 @@
+.pcMun {
+  width: 1200px;
+    height: 100%;
+    line-height: 60px;
+    font-size: 14px;
+    background-color: rgba(0,0,0,.5);
+  }
+  .pcMun .munUl {
+    display: flex;
+  }
+  .pcMun .munUl .numLi{
+    width: 120px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    color: rgb(255, 255, 255);
+    &:hover{ 
+      background-color: #048cf8;
+    }
+  }
+  .pcMun .munUl .numLi1{
+    &:hover .showItem1 {
+      display: block;
+      top: 0;
+      background-color: rgba(233, 233, 233, 0.6);
+    }
+  }
+  .pcMun .munUl .numLi2{
+    &:hover .showItem2 {
+      top: 0;
+      display: block;
+      background-color: rgba(233, 233, 233, 0.6);
+    }
+  }
+  .pcMun .munUl .numLi3{
+    &:hover .showItem3 {
+      top: 0;
+      display: block;
+      background-color: rgba(233, 233, 233, 0.6);
+    }
+  }
+  .numP{
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+    padding: 0 28px;
+    text-align: center;
+  }
+  .pcMun .itemUl .itemLi a {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+    padding: 0 28px;
+    text-align: center;
+    position: relative;
+    transition: all .3s linear;
+    color: rgb(0, 0, 0);
+  }
+  .pcMun .itemUl .itemLi a:hover {
+    color: #048cf8;
+  }
+  .itemUl .showItem1 {
+    position: absolute;
+    top: -50px;
+    display: none;
+    transition-property: top;
+    transition-duration: 1s;
+  }
+  .itemUl .showItem2 {
+    top: -50px;
+    display: none;
+    position: absolute;
+    transition-property: top;
+    transition-duration: 1s;
+  }
+  .itemUl .showItem3 {
+    top: -50px;
+    display: none;
+    position: absolute;
+    transition-property: top;
+    transition-duration: 1s;
+  }
+  .itemUl {
+    position: absolute;
+    width: 1200px;
+    margin: auto;
+  }
+  .itemUl .itemLi {
+    float: left;
+    width: auto;
+    padding-left: 0;
+    text-align: left;
+    padding-right: 25px;
+    margin: 0 auto;
+    display: block;
+    line-height: 45px;
+  }
